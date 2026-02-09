@@ -64,6 +64,50 @@ The system maintains a Proof-of-Authority (PoA) blockchain.
 
 - Auto-Quarantine: If reputation falls below $50\%$, the node's cryptographic keys are revoked, and it is kicked off the network.
 
+### 🔄 Logical Data Flow
+
+```mermaid
+graph TD
+    A[Citizen Biometrics] -->|Local Hashing| B(Regional Office Node)
+    B -->|SHA-3 Salted Hash| C{Blockchain Ledger}
+    B -->|Local ML Weights + DP Noise| D[National HQ Aggregator]
+    
+    subgraph "Byzantine Defense Layer"
+    D -->|Calculate Euclidean Distance| E{Krum Filter}
+    E -->|Reject Outliers| F[Global Fraud Model Update]
+    E -->|Identify Malicious Node| G[Reputation Slashing]
+    end
+    
+    G -->|Update Trust Score| C
+    F -->|Visual Alerts| H[Ministry Dashboard]
+```
+
+### 🗺️ System Topology
+
+```mermaid
+graph LR
+    subgraph "Ministry of Interior HQ"
+    HQ[Central Aggregator]
+    DB[(Global Model)]
+    Dash[Streamlit Dashboard]
+    end
+
+    subgraph "Regional Offices (Nodes)"
+    N1[Office 1: Honest]
+    N2[Office 2: Honest]
+    N3[Office 3: Honest]
+    N4[Office 4: Byzantine/Hacked]
+    end
+
+    subgraph "Blockchain Layer"
+    BC{Identity Registry & Slashing Contract}
+    end
+
+    N1 & N2 & N3 & N4 <--> BC
+    N1 & N2 & N3 & N4 -->|Encrypted Updates| HQ
+    HQ --> Dash
+    HQ --> DB
+```
 ## 🛠️ Technical Implementation
 
 The Math Behind the Defense
