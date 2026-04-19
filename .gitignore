@@ -13,8 +13,7 @@ venv/
 .venv/
 env/
 
-# Logs & generated data (keep structure, ignore content)
-logs/*.csv
+# Logs — keep CSVs (demo data for dashboard), ignore raw log file
 logs/*.log
 
 # Reports (regenerated on demand)

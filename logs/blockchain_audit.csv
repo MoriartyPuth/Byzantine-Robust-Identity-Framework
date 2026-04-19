@@ -1,0 +1,6 @@
+office_id,action,amount,old_reputation,new_reputation,reason,timestamp
+4,SLASH,50,100,50,byzantine_poisoning,2026-04-05T15:42:56.300133
+0,REWARD,5,100,100,honest_contribution,2026-04-05T15:42:56.300133
+1,REWARD,5,100,100,honest_contribution,2026-04-05T15:42:56.300133
+2,REWARD,5,100,100,honest_contribution,2026-04-05T15:42:56.300133
+3,REWARD,5,100,100,honest_contribution,2026-04-05T15:42:56.300133
