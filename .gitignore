@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Logs & generated data (keep structure, ignore content)
+logs/*.csv
+logs/*.log
+
+# Reports (regenerated on demand)
+reports/report.html
+reports/report.pdf
+
+# Dataset (downloaded at runtime)
+data/nsl_kdd/
+
+# Model checkpoints
+checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.key

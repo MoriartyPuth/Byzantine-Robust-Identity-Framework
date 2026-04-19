@@ -1,0 +1,65 @@
+[
+  {"inputs": [], "stateMutability": "nonpayable", "type": "constructor"},
+
+  {"anonymous": false, "inputs": [{"indexed": true,  "name": "node",              "type": "address"},
+                                   {"indexed": false, "name": "initialReputation", "type": "uint256"}],
+   "name": "NodeInitialised", "type": "event"},
+
+  {"anonymous": false, "inputs": [{"indexed": true,  "name": "node",   "type": "address"},
+                                   {"indexed": false, "name": "idHash", "type": "bytes32"}],
+   "name": "Registered", "type": "event"},
+
+  {"anonymous": false, "inputs": [{"indexed": true,  "name": "node",          "type": "address"},
+                                   {"indexed": false, "name": "newReputation", "type": "uint256"},
+                                   {"indexed": false, "name": "reason",        "type": "string"}],
+   "name": "Slashed", "type": "event"},
+
+  {"anonymous": false, "inputs": [{"indexed": true,  "name": "node",          "type": "address"},
+                                   {"indexed": false, "name": "newReputation", "type": "uint256"}],
+   "name": "Rewarded", "type": "event"},
+
+  {"inputs": [],
+   "name": "admin",
+   "outputs": [{"name": "", "type": "address"}],
+   "stateMutability": "view", "type": "function"},
+
+  {"inputs": [{"name": "node", "type": "address"}],
+   "name": "reputation",
+   "outputs": [{"name": "", "type": "uint256"}],
+   "stateMutability": "view", "type": "function"},
+
+  {"inputs": [{"name": "", "type": "bytes32"}],
+   "name": "idLedger",
+   "outputs": [{"name": "", "type": "bool"}],
+   "stateMutability": "view", "type": "function"},
+
+  {"inputs": [], "name": "MAX_REPUTATION",
+   "outputs": [{"name": "", "type": "uint256"}],
+   "stateMutability": "view", "type": "function"},
+
+  {"inputs": [], "name": "BAN_THRESHOLD",
+   "outputs": [{"name": "", "type": "uint256"}],
+   "stateMutability": "view", "type": "function"},
+
+  {"inputs": [{"name": "node", "type": "address"}],
+   "name": "initializeNode",
+   "outputs": [], "stateMutability": "nonpayable", "type": "function"},
+
+  {"inputs": [{"name": "h", "type": "bytes32"}],
+   "name": "register",
+   "outputs": [], "stateMutability": "nonpayable", "type": "function"},
+
+  {"inputs": [{"name": "node",   "type": "address"},
+              {"name": "reason", "type": "string"}],
+   "name": "slash",
+   "outputs": [], "stateMutability": "nonpayable", "type": "function"},
+
+  {"inputs": [{"name": "node", "type": "address"}],
+   "name": "reward",
+   "outputs": [], "stateMutability": "nonpayable", "type": "function"},
+
+  {"inputs": [{"name": "node", "type": "address"}],
+   "name": "isBanned",
+   "outputs": [{"name": "", "type": "bool"}],
+   "stateMutability": "view", "type": "function"}
+]

@@ -1,0 +1,28 @@
+federated_learning:
+  n_offices: 5
+  num_rounds: 10
+  local_epochs: 20          # more local steps = larger delta = better SNR
+
+model:
+  hidden_layers: [64, 32]
+
+differential_privacy:
+  epsilon_per_round: 5.0    # central DP applied once per round on server
+  clip_norm: 5.0            # higher clip_norm preserves more signal
+
+byzantine:
+  num_malicious: 1
+  attack_office: 4
+
+data:
+  use_synthetic: true
+  n_train_samples: 50000
+  n_test_samples: 10000
+
+blockchain:
+  provider_url: ""       # set WEB3_PROVIDER_URL env var or fill here for Ganache
+  contract_address: ""   # set WEB3_CONTRACT_ADDRESS after deploying IdentityRegistry.sol
+
+logging:
+  level: INFO            # DEBUG | INFO | WARNING
+  file: logs/run.log
