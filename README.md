@@ -1,14 +1,3 @@
----
-title: Byzantine Robust Identity Framework
-emoji: 🛡️
-colorFrom: blue
-colorTo: indigo
-sdk: streamlit
-sdk_version: 1.28.0
-app_file: dashboard.py
-pinned: false
----
-
 # Topic: A Byzantine-Robust Federated Framework for Secure Civil Registry and Identity Fraud Detection
 
 A Blockchain-Integrated Framework with Byzantine-Robust Aggregation and Differential Privacy
