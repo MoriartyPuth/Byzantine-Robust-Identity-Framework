@@ -125,6 +125,8 @@ $$M_{priv} = M_{raw} + \text{Laplace} \left( 0, \frac{\Delta f}{\epsilon} \right
 
 ## 🖥️ Dashboard Preview
 
+Live Demo: [Byzantine-Robust-Identity-Framework](https://byzantine-robust-identity-framework.streamlit.app/)
+
 The dashboard provides:
 
 - System Trust Score: Average reputation of all regional offices.
@@ -133,7 +135,7 @@ The dashboard provides:
 
 - Immutable Audit Trail: Log of every registration and slashing event.
 
-<img width="1917" height="963" alt="image" src="https://github.com/user-attachments/assets/78c422d3-b866-4bca-8612-8f6847acec44" />
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/1fcf78f3-0657-4c68-9a80-43f91ec3dc45" />
 
 ---
 
