@@ -37,3 +37,12 @@ Thumbs.db
 # Secrets
 .env
 *.key
+
+# Old/stale files (kept locally, not tracked)
+.devcontainer/
+.claude/
+simulation/
+"Identity Framework/"
+BYZANTINE_ROBUST_IDENTITY_FRAMEWORK_INTEGRATION_PLAN.txt
+REQUIREMENTS_IMPROVEMENTS.txt
+UPDATE_LOG.txt
